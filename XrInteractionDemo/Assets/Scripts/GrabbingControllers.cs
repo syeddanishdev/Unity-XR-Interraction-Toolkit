@@ -1,11 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+
 
 public class GrabbingControllers : MonoBehaviour
 {
+    [SerializeField] Material selected = null;
+    [SerializeField] Material unSelected = null;
+
+    private MeshRenderer meshRenderer = null;
+    
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         
     }
